@@ -1,0 +1,458 @@
+* {
+    margin: 0;
+    font-family: Helvetica Neue, sans-serif;
+}
+
+body::-webkit-scrollbar {
+    width: 16px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #424242;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #686868;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #7b7b7b;
+}
+
+body {
+    background-color: #18191a;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #242526;
+    border-bottom: #3e3f41 solid 1px;
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.search-icon {
+    filter: invert(72%) sepia(8%) saturate(155%) hue-rotate(179deg) brightness(99%) contrast(87%);
+    width: 15px;
+    margin-left: 76px;
+    position: absolute;
+}
+
+.nav-left label {
+    font-size: 14px;
+    color: #b0b3b8;
+    margin-left: 100px;
+    padding-top: 2px;
+    position: absolute;
+}
+
+a {
+    display: flex;
+}
+
+.fb_logo {
+    padding: 7px;
+    margin-left: 9px;
+}
+
+.search-bar {
+    height: 38px;
+    width: 276px;
+    border: 0;
+    border-radius: 50px;
+    background-color: #3a3b3c;
+}
+
+.nav-middle {
+    display: flex;
+    align-items: center;
+}
+
+.nav-middle svg {
+    width: 87px;
+    margin: 4px;
+    padding: 12px;
+    border-radius: 9px;
+    color: #b3b5ba;
+}
+
+.nav-middle svg:hover {
+    background-color: #3a3b3c;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    margin-right: 11px;
+    margin-left: 140px;
+}
+
+.nav-right button {
+    width: 40px;
+    height: 40px;
+    margin: 4px;
+    color: #b3b5ba;
+    background-color: #3a3b3c;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#account {
+    width: 40px;
+    border-radius: 50%;
+    filter: none;
+}
+
+#account:hover {
+    filter: brightness(110%);
+}
+
+.nav-right button img {
+    width: 19px;
+    filter: invert(96%) sepia(8%) saturate(78%) hue-rotate(182deg) brightness(94%) contrast(100%);
+}
+
+.nav-right button:hover {
+    background-color: #4e4f50;
+}
+
+header {
+    height: 610px;
+    background-color: #242526;
+    z-index: -1;
+}
+
+.cover-photo {
+    display: flex;
+    justify-content: center;
+}
+
+#cover-photo {
+    max-width: 72%;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    z-index: 2;
+}
+
+#cover-photo-blur {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    z-index: 1;
+    filter: blur(50px);
+    mask-image: linear-gradient(black, transparent);
+}
+
+.change-cover-photo {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 411px;
+    left: 1106px;
+    z-index: 10;
+}
+
+#camera {
+    position: absolute;
+    left: 11px;
+    background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yT/r/LL7cZYzfDQ7.png?_nc_eui2=AeEAN4rFEl0Eqb_mcgvjubvHec4zYh3cFFd5zjNiHdwUV3GJHQ8JA27b_Fj5fi4i-N0B0wfajICP1AfeQzQBcHZD);
+    background-position: 0 -286px;
+    background-size: 26px 354px;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+#change-cover-photo {
+    font-size: 14px;
+    font-weight: bolder;
+    width: 170px;
+    height: 36px;
+    border-radius: 6px;
+    border: none;
+    padding-left: 27px;
+    background-color: white;
+}
+
+#change-cover-photo:hover {
+    background-color: #f2f2f2;
+}
+
+.avatar-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#avatar {
+    width: 168px;
+    border: 4px solid #242526;
+    border-radius: 50%;
+    margin-left: 245px;
+    position: relative;
+    top: -47px;
+    z-index: 5;
+}
+
+#avatar:hover {
+    filter: brightness(107%);
+}
+
+.intro {
+    position: relative;
+    top: 40px;
+    left: 13px;
+}
+
+#friend {
+    font-size: 15px;
+    color: #b0b3b8;
+    text-decoration: none;
+    padding-top: 6px;
+}
+
+#friend:hover {
+    text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+}
+
+.story {
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#add {
+    width: 16px;
+    position: absolute;
+    left: 17px;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(307deg) brightness(103%) contrast(101%);
+}
+
+#post-story-btn {
+    color: white;
+    font-size: 14px;
+    font-weight: bolder;
+    width: 135px;
+    height: 36px;
+    border-radius: 6px;
+    border: none;
+    padding-left: 26px;
+    margin: 4px;
+    background-color: #0866ff;
+}
+
+#post-story-btn:hover {
+    background-color: #2176ff;
+}
+
+.setting {
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#pen {
+    width: 16px;
+    height: 17px;
+    position: absolute;
+    left: 160px;
+    filter: invert(94%) sepia(5%) saturate(110%) hue-rotate(177deg) brightness(102%) contrast(87%);
+}
+
+#setting {
+    color: #e7e9ec;
+    font-size: 14px;
+    font-weight: bolder;
+    width: 212px;
+    height: 36px;
+    border-radius: 6px;
+    border: none;
+    padding-left: 27px;
+    margin: 4px;
+    background-color: #3a3b3c;
+}
+
+#setting:hover {
+    background-color: #4e4f50;
+}
+
+.drop-down {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    z-index: 10;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#down {
+    position: absolute;
+    left: 328px;
+    filter: invert(88%) sepia(6%) saturate(110%) hue-rotate(182deg) brightness(105%) contrast(96%);
+    background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yT/r/LL7cZYzfDQ7.png?_nc_eui2=AeEAN4rFEl0Eqb_mcgvjubvHec4zYh3cFFd5zjNiHdwUV3GJHQ8JA27b_Fj5fi4i-N0B0wfajICP1AfeQzQBcHZD);
+    background-position: 0 -304px;
+    background-size: 26px 354px;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+#down-btn {
+    width: 48px;
+    height: 36px;
+    border-radius: 6px;
+    border: none;
+    margin: 4px;
+    background-color: #3a3b3c;
+}
+
+#down-btn:hover {
+    background-color: #4e4f50;
+}
+
+.nav-header {
+    position: relative;
+    top: -32px;
+    margin: 0 auto;
+    width: 1030px;
+    border-top: #3e3f41 solid 1px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-header div button {
+    color: #afb2b5;
+    background-color: #242526;
+    font-weight: bold;
+    font-size: 14px;
+    width: 80px;
+    height: 52px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 4px;
+}
+
+.nav-header div button:hover {
+    background-color: #3a3b3c;
+}
+
+#post {
+    color: #0a62f2;
+    background-color: #242526;
+    font-weight: bold;
+    font-size: 14px;
+    width: 80px;
+    height: 56px;
+    border-radius: 0;
+    border-bottom: #0a62f2 3px solid;
+    margin-top: 4px;
+}
+
+#more-option svg {
+    margin-top: 3px;
+    color: #e7e9ed;
+}
+
+#more-option {
+    color: #afb2b5;
+    background-color: #3a3b3c;
+    font-weight: bolder;
+    font-size: 18px;
+    width: 48px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 12px;
+}
+
+#more-option:hover {
+    background-color: #4e4f50;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 17px;
+}
+
+.left-site {
+    width: 28%;
+}
+
+.first-look {
+    color: #e4e6eb;
+    background-color: #242526;
+    padding: 17px;
+    border-radius: 10px;
+}
+
+.first-look button {
+    color: #e4e6eb;
+    background-color: #3a3b3c;
+    font-weight: bolder;
+    font-size: 14px;
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 12px;
+}
+
+.first-look div {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 21px;
+}
+
+.first-look div img {
+    width: 23px;
+    margin-right: 12px;
+    filter: invert(71%) sepia(2%) saturate(2082%) hue-rotate(176deg) brightness(84%) contrast(73%);
+}
+
+.right-site {
+    width: 38.7%;
+    margin-left: 17px;
+}
+
+.post-status {
+    color: #e4e6eb;
+    background-color: #242526;
+    padding: 12px 17px;
+    border-radius: 10px;
+}
+
+.post-status div {
+    display: flex;
+}
+
+.post-status div button {
+    width: 100%;
+    margin-left: 9px;
+    padding-left: 13px;
+    padding-top: 7px;
+    text-align: left;
+    border-radius: 50px;
+    border: none;
+    color: #b0b3b6;
+    background-color: #3a3b3c;
+    font-size: 16px;
+}
