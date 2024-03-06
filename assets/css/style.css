@@ -158,8 +158,8 @@ header {
     display: flex;
     align-items: center;
     position: absolute;
-    top: 411px;
-    left: 1106px;
+    top: 26.8vw;
+    left: 72vw;
     z-index: 10;
 }
 
@@ -436,15 +436,15 @@ main {
 .post-status {
     color: #e4e6eb;
     background-color: #242526;
-    padding: 12px 17px;
+    padding: 12px 17px 10px 17px;
     border-radius: 10px;
 }
 
-.post-status div {
+.post {
     display: flex;
 }
 
-.post-status div button {
+.post button {
     width: 100%;
     margin-left: 9px;
     padding-left: 13px;
@@ -455,4 +455,38 @@ main {
     color: #b0b3b6;
     background-color: #3a3b3c;
     font-size: 16px;
+}
+
+.option-bar {
+    border-top: 1px #3e3f41 solid;
+    margin-top: 12px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+}
+
+.option button {
+    border-radius: 8px;
+    border: none;
+    color: #b8bbbf;
+    background-color: #242526;
+    font-weight: bold;
+    font-size: 14px;
+    width: 180px;
+    height: 40px;
+    padding-left: 30px;
+}
+
+.option button:hover {
+    background-color: #3a3b3c;
+}
+
+.option img {
+    position: absolute;
+    width: 25px;
 }
