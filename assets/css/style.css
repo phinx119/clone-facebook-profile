@@ -397,11 +397,14 @@ main {
     width: 28%;
 }
 
-.first-look {
+.div-left-site {
     color: #e4e6eb;
     background-color: #242526;
-    padding: 17px;
     border-radius: 10px;
+}
+
+.first-look {
+    padding: 17px;
 }
 
 .first-look button {
@@ -426,6 +429,132 @@ main {
     width: 23px;
     margin-right: 12px;
     filter: invert(71%) sepia(2%) saturate(2082%) hue-rotate(176deg) brightness(84%) contrast(73%);
+}
+
+.list-picture {
+    margin-top: 18px;
+    padding: 17px;
+}
+
+.list-picture a {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.list-picture a:hover {
+    text-decoration: underline;
+}
+
+.list-picture button {
+    color: #6bb0ff;
+    background-color: #242526;
+    border-radius: 5px;
+    border: none;
+    font-size: 17px;
+    padding: 9px 6px;
+    position: absolute;
+    left: 34.9vw;
+    top: 65.6vw;
+}
+
+.list-picture button:hover {
+    background-color: #3a3b3c;
+}
+
+.grid-view-picture {
+    margin-top: 18px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+}
+
+.picture {
+    text-align: center;
+}
+
+.picture img {
+    width: 127px;
+    height: 127px;
+    object-fit: cover;
+}
+
+.picture img:hover {
+    filter: opacity(85%);
+}
+
+.list-friend {
+    margin-top: 18px;
+    padding: 17px;
+}
+
+.list-friend a {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.list-friend a:hover {
+    text-decoration: underline;
+}
+
+.list-friend button {
+    color: #6bb0ff;
+    background-color: #242526;
+    border-radius: 5px;
+    border: none;
+    font-size: 17px;
+    padding: 9px 6px;
+    position: absolute;
+    left: 33.3vw;
+    top: 97.2vw;
+}
+
+.list-friend button:hover {
+    background-color: #3a3b3c;
+}
+
+.avatar {
+    margin-bottom: 27px;
+    margin-right: 12px;
+}
+
+.avatar b {
+    font-size: 13px;
+}
+
+.avatar img {
+    width: 123px;
+    height: 123px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.avatar img:hover {
+    filter: opacity(85%);
+}
+
+.info {
+    margin-top: 15px;
+    margin-bottom: 17px;
+    color: #b0b3b8;
+    font-size: 13px;
+}
+
+.info a {
+    display: inline-block;
+    color: #b0b3b8;
+    text-decoration: none;
+}
+
+.info a:hover {
+    text-decoration: underline;
+}
+
+.info i {
+    filter: invert(65%) sepia(1%) saturate(1950%) hue-rotate(222deg) brightness(106%) contrast(97%);
 }
 
 .right-site {
@@ -538,7 +667,7 @@ h2 {
     justify-content: center;
 }
 
-.bottom button{
+.bottom button {
     width: 46.5%;
     color: #b1b4b7;
     background-color: #242526;
