@@ -490,3 +490,74 @@ main {
     position: absolute;
     width: 25px;
 }
+
+.view-mode {
+    background-color: #242526;
+    margin-top: 18px;
+    border-radius: 8px;
+    border: none;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 18px 8px 18px;
+    border-bottom: #3e3f41 solid 1px;
+}
+
+.top div {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    color: #e0e2e6;
+    font-size: 20px;
+}
+
+.top div button {
+    font-weight: bold;
+    font-size: 14px;
+    color: #e7e9ed;
+    background-color: #3a3b3c;
+    border-radius: 7px;
+    border: none;
+    display: flex;
+    align-items: center;
+    padding: 11px;
+}
+
+.view-mode div div button i {
+    filter: invert(96%) sepia(8%) saturate(84%) hue-rotate(182deg) brightness(98%) contrast(91%);
+    margin-right: 6px;
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+}
+
+.bottom button{
+    width: 46.5%;
+    color: #b1b4b7;
+    background-color: #242526;
+    border-radius: 8px;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 9px;
+    margin: 3px;
+}
+
+.bottom button:hover {
+    background-color: #3a3b3c;
+}
+
+.bottom button i {
+    filter: invert(95%) sepia(6%) saturate(140%) hue-rotate(169deg) brightness(78%) contrast(82%);
+    margin-right: 4px;
+}
